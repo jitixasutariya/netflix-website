@@ -9,7 +9,7 @@ import profile_icon3 from "./Assets/red_notice.jpg";
 
 // Card component to display individual profile cards
 const Card = ({ image, altText, description, title, link }) => (
-  <div className="col-md-4 mb-4 mt-4">
+  <div className="col-sm-12 col-md-6 col-lg-4 mb-4 mt-4">
     <div className="card h-100">
       <img src={image} alt={altText} className="card-img-top" />
       <div className="card-body">
@@ -32,6 +32,7 @@ const Card = ({ image, altText, description, title, link }) => (
 const UserProfileCard = () => {
   return (
     <div className="container">
+      <h1 className="main-title">Top Action Movies on Netflix</h1>
       <div className="row">
         <Card
           image={profile_icon}
